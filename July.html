@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Crystal</title>
+<link rel="stylesheet" type="text/css" href="first.css">
+
+<script>
+	function myFunction(){
+		var flip = document.getElementById("photo");
+		flip.src= "dog-output.jpg";
+	}
+	
+	function flipFunction(){
+		var image2 = document.getElementById("flipIt").src;
+		
+		if ( image2== 'dog-output.jpg'){
+		image2.src = 'big.jpg';
+		}
+		
+		else{
+		image2.src = "dog-output.jpg";
+		}
+	}
+	
+</script>
+
+</head>
+<!-- This is the comment -->
+<body>
+<div class = "container">
+<h1 style="font:bilbo-swash-caps"> Welcome to Crystal's webpage </h1>
+
+<ul class = "nav" id = "myMenu">
+	<li><a href="#"> Home </a></li>
+    <li><a href="#"> About </a></li>
+</ul>
+<p>
+This is the content
+<!-- style = "font-weight:bold"> This will be the portfolio -->
+</p>
+<!-- <img src="dog.jpg" style="width:40%" id="photo" onClick="myFunction()"/> -->
+<img src="dog.jpg" style="width:40%" onClick="filpFunction()" id="flipIt" />
+</div>
+<p class = "textCenter contatiner"> Hello, this is text center with red</p>
+<p id= "blueStyle" class="textCenter container"> Yes, this is blue in the left align </p>
+
+
+</body>
+</html>
